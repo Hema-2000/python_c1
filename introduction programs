@@ -1,0 +1,127 @@
+1.what is Python and its benefits?
+Python:Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. 
+Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
+Benefits:
+1.Open Source and free
+Python is free for use even for commercial purposes. Moreover, active.
+2.Easy to learn
+Python is popular for its excellent readability. This means, even a non-programmer can read and comprehend the uncluttered syntax. 
+3.User-Friendly data structures
+With its built-in data structures, Python can easily construct run-time data structures including Arrays, Lists, tuples, and Files.  
+4.Speed
+Being expressive and with object-oriented design, Python contributes to increased speed and productivity even with less amount of coding.
+
+
+2.How do you comment multiple lines in Python?
+->we can comment out multiple lines by selecting the lines as per our requirement and apply # to it.  
+->we can comment out multiple lines by 3 single quotes i.e.,'''--------
+                                                               --------
+                                                               --------'''.
+                                                               
+3.  how to convert the Kilometers  to Meters?
+km=int(input("enter the kms:"))
+mt=km*1000
+print(mt)
+output:
+enter the kms:5
+5000
+
+
+4.how to print a string number of times?
+str=input("enter the str")
+n=int(input("enter the no."))
+print(str*n)
+output:
+enter the strhema
+enter the no.5
+hemahemahemahemahema
+
+
+5.how to get the area and perimeter of the square?
+side=int(input("enter the side:"))
+area=side*2
+perimeter=4*side
+print("area of square:",area,"perimeter of square:",perimeter)
+output:
+enter the side:2
+area of square: 4 perimeter of square: 8
+
+6.how to get half of the string?
+str=input("enter string:")
+l1=len(str)
+l2=int(l1/2)
+# r=str[:l2]
+# print(r)
+for i in range(l2):
+    print(str[i],end="")
+
+output:
+enter string:hema
+he
+
+
+7.Python is an interpreted language. explain?
+->yes, Python is an interpreted language ,Interpreted in simple terms means running code line by line.
+-> Consider a scenario where you are trying to run a python code, but unfortunately, you have made some mistakes at the bottom of the code.
+->You will find that there is an error generated for obvious reasons, but along with the error, you will find the output of the program till the line of the program is correct. 
+-> This is possible because Python reads the code line by line and generates output based on the code. 
+->Whenever it finds any error in the line, it stops running and generates an error statement.
+
+
+8.how to get the integer input from the user?
+-> lets take a variable
+  a=int(input('enter integer value"))
+  
+  
+9. how to define function and how to return a value from the fucntion? 
+-> Function:
+A function is a block of organised,reusable code that is used to perform a single,related action . functions provides better modulation
+Function definition: def fun_name(parameters):
+Return statement:
+A return statement is used to end the execution of the function call and “returns” the result .
+The statements after the return statements are not executed. Return statement can not be used outside the function.
+If the return statement is without any expression, then the special value None is returned.
+Syntax:
+def fun_name():
+    statements
+    .
+    .
+    return [expression]
+    
+    
+ 10. what are the type casting functons in python?
+ ->The conversion of one data type into the other data type is known as type casting in python or type conversion in python.
+ ->there are 2 types of conversions 1. implicit and explicit conversions
+ ->implicit:During the implicit type conversion, the user is not supposed to mention any specific data type during the conversion.
+ ->explicit:In this type conversion, the user is supposed to pass the value in a function to obtain the required data type.
+ The int(), float() and str() are mostly used for the explicit type conversion.
+ 
+ 11. taking input from user
+ a=input()
+print(a)
+
+12.printing 2 inputs from user
+word=input()
+print(word)
+print("###")
+
+13.printing 3 inputs
+word1=input()
+word2=input()
+print(word1)
+print(word2)
+
+14.take 2 inputs and print 2nd word
+a=input()
+b=input()
+print(b)
+
+15.printing full name using conactenation
+w1=input()
+w2=input()
+print(w1+" "+w2)
+
+16.printing name and age
+name=input()
+age=(input())
+print(name + " is " + age + " years old")
