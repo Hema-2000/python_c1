@@ -1,0 +1,27 @@
+1. what is repository in git?
+->Repositories in GIT contain a collection of files of various different versions of a Project.
+->A Git repository tracks and saves the history of all changes made to the files in a Git project.
+-> It saves this data in a directory called . git , also known as  the repository folder.
+->Git uses a version control system to track all changes made to the project and save them in the repository.
+
+
+
+2.What is the difference between Git and Github?
+->While Git is a tool that's used to manage multiple versions of source code edits that are then transferred to files in a Git repository, GitHub serves as a location for uploading copies of a Git repository. 
+->In a sense, then, there's no comparison when it comes to Git vs. GitHub as far as their function
+
+3.How the repository is created in git
+->The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new,empty repository
+
+
+4. what is the difference between git pull and git fetch?
+->Git fetch:git fetch is the command that tells your local git to retrieve the latest meta-data info from the original.
+->Git pull:git pull on the other hand does that and brings (copy) those changes from the remote repository.
+
+
+5.What does the git clone command in git?
+->When you clone a repository, you copy the repository from GitHub.com to your local machine.
+->Cloning a repository pulls down a full copy of all the repository data that GitHub.com has at that point in time.
+
+
+
