@@ -1,0 +1,98 @@
+1. write a program if b is greater than a by 1
+
+a=int(input())
+b=int(input())
+a=a+1
+res=b==a
+print(res)
+
+2.write a program for the num having 2 digits, sum of 2 dits are > than 7 true otherwise false
+n= (input())
+sum = 0
+for i in str(n): 
+    sum += int(i)  
+res=sum>7
+print(res)
+
+3.print true if last part of first string is equal to second string otherwisw false
+a=input()
+b=input()
+l=int(len(b))
+l1=int(len(a))
+if(a[-l:l1]==b[ :]):
+    print("True")
+else:
+    print("False")     
+    
+ 4.take input as 2 stringa and index as well and check if that index of first string characters are equal to second string then true otherwise hfalse
+a=input()
+b=input()
+c=int(input())
+l=len(a)
+l1=len(b)
+n=(l-l1)-c
+
+if(a[c:l-n]==b[ : ]):
+    print("True")
+else:
+    print("False")
+    
+    
+5.read percentage and numberand check if the per of 500 is equal to number
+per=int(input())
+num=int(input())
+val=int((per/100)*500)
+if(val==num):
+    print("True")
+else:
+    print("False")
+    
+    
+6. area and perimeter of rectangle
+l=int(input())
+b=int(input())
+area=l*b
+per=2*(l+b)
+if(area<=per):
+    print("True")
+else:
+    print("False")
+
+7.compare last n and first n characters
+s=input()
+n=int(input())
+l=len(s)
+if(s[0:n]!=s[l-n:l]):
+    print("True")
+else:
+    print("False")
+    
+ 8.check first part of the string
+ a=input()
+b=input()
+l=len(b)
+if(a[0:l]==b[ : ]):
+    print("True")
+else:
+    print("False")
+    
+    
+  9. check the digits in a num are sam eor not
+  a=int(input())
+b=str(a)
+if(b[0]==b[1]):
+    if(b[1]==b[2]):
+        print("True")
+else:
+    print("False")
+
+10.comparison of sides of traingle
+a=int(input())
+b=int(input())
+c=int(input())
+if((a+b)>c):
+    if((b+c)>a):
+        if((c+a)>b):
+            print("True")
+else:
+    print("False")
