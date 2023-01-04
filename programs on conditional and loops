@@ -1,0 +1,30 @@
+fabonacci sequence:
+n=int(input("enter no. of terms for printing fabonacci series:"))
+n1,n2=0,1
+count=0
+if (n<=0):
+    print("enter valid positive num")
+elif (n==1):
+    print("fabonacci sequence upto",n,":")
+    print(n1)
+else:
+    print("fabonacci sequence :")
+    while(count<n):
+        print(n1)
+        nth=n1+n2
+        n1=n2
+        n2=nth
+        count+=1
+
+output:
+fabonacci sequence :
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
