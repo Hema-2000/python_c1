@@ -83,3 +83,16 @@ enter the matrix elements:1 2 3 4 5 6
 the matrix elements :
 1 2 3 
 4 5 6 
+
+
+
+3.print 17 in char array using int ptr
+#include<stdio.h>
+int main()
+{
+char arr[20]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+int *ptr=(int*)arr;
+ptr=ptr+4;
+
+printf("%d",*(char*)ptr);
+}
