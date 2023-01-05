@@ -1,0 +1,167 @@
+1. create and print list
+list_a=["rose",183,148,123.26,False]
+print(list_a)
+
+2.concatenate number to list at starting and ending
+num_list =  [10, 20, 40, 100]
+n = int(input())
+first_list = [n]+num_list
+second_list = num_list+[n]
+
+print(first_list)
+print(second_list)
+
+output:
+0
+[0, 10, 20, 40, 100]
+[10, 20, 40, 100, 0]
+
+
+3.convert string to list
+s=input()
+# list_a=list(s)
+print(list(s))
+output:
+python
+['p', 'y', 't', 'h', 'o', 'n']
+
+
+
+4.list indexing
+color_list = ["Red", "Orange", "Yellow", "Pink", "Green", "Blue", "Purple", "Black", "White"]
+n=int(input())
+print(color_list[n])
+output:
+4
+green
+
+
+5.programming_languages_list = ["Python", "Java", "Ruby", "C", "C++", "Go", "R", "JavaScript", "Swift", "PHP", "Kotlin", "Perl"]
+a= int(input())
+for i in range(a):
+    print(programming_languages_list[int(input())])
+    
+    output:
+    2
+1
+Java
+2
+Ruby
+
+
+6.list repetition:
+a=int(input())
+b=int(input())
+list_a=[a]
+list_b=list_a*b
+print(list_b)
+output:
+5
+4
+[5, 5, 5, 5]
+
+7.program to print new list if the the element is greater than given num 
+num_list = [1, 6, 32, 93, 71, -20, 30, -90, 50]
+n=int(input())
+new_list=[]
+for i in num_list:
+    if(i>n):
+        new_list+=[i]
+print(new_list)        
+output:
+[93, 71, 50]
+
+
+8.taking input from user and create list
+n=int(input())
+lis=[]
+for i in range(n):
+    a=input()
+    lis+=[a]
+print(lis)
+output:
+3
+hema
+89
+3.4
+['hema', '89', '3.4']
+
+
+9.reverse a list
+a= int(input())
+b=[]
+for i in range(a):
+    s=input()
+    b+=[s]
+c=b[::-1]
+for i in c:
+    print(i)
+ output:
+ 4
+hema
+sailu
+raghu
+kiran
+kiran
+raghu
+sailu
+hema
+
+
+10.print last 3 and firts 3 strings in a list
+a= int(input())
+b=[]
+for i in range(a):
+    s=input()
+    b+=[s]
+newlis=b[:3]+b[a-3:]
+print(newlis)
+
+
+11. reverse a list:in another way
+n=int(input())
+org_list=[]
+for i in range(n):
+    a=input()
+    org_list+=[a]
+print(org_list)
+rev_list=org_list[::-1]
+print(rev_list)
+output:
+4
+mom
+dad   
+me 
+sis
+['mom', 'dad ', 'me ', 'sis']
+['sis', 'me ', 'dad ', 'mom']
+
+
+12.concatenate 2 lists using index method
+list_1=["hema","mom","dad"]
+list_2=["fam","home","house"]
+list_3=[]
+for i in range(len(list_1)):
+    list_3.append(list_1[i]+list_2[i])
+print(list_3)
+list_1.extend(list_2)
+print(list_1)
+output:
+['hemafam', 'momhome', 'dadhouse']
+['hema', 'mom', 'dad', 'fam', 'home', 'house']
+print(newlis)
+output:
+['he', 'si', 'th', 'ps', 'me', 'ka']
+
+
+
+13.square of each element in list
+a=[2,3,4,5]
+
+for i in range(len(a)):
+    a[i]=a[i]**2
+print(a)
+    
+    
+    
+  
