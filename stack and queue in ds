@@ -1,0 +1,135 @@
+#include<stdio.h>
+#define N 5
+int stack[N];
+int top=-1;
+void push(int n)
+{
+    if(top==N-1)
+    printf("stack is full");
+    else
+    {
+    top++;
+    stack[top]=n;
+    }
+    
+}
+void pop()
+{
+    int item;
+    if(top==-1)
+    printf("stack is empty");
+    else
+    {
+        item=stack[top];
+        top--;
+    printf("the popped element is:%d",item);
+    }
+}
+void peek()
+{
+    if(top==-1)
+    printf("stack is empty");
+    else
+    printf("\n top most element is:%d",stack[top]);
+}
+void display()
+{
+    if(top==-1)
+    printf("stack is empty");
+    else
+    {
+        printf("\n remaining elements in stack:");
+        for(int i=top;i>=0;i--)
+            printf("\n%d",stack[i]);
+    }
+}
+int main()
+{
+   push(1);
+   push(2);
+   push(3);
+   pop();
+   peek();
+   display();
+}
+output:
+the popped element is:3
+ top most element is:2
+ remaining elements in stack:
+2
+1
+
+the popped element is:3
+ top most element is:2
+ remaining elements in stack:
+2
+1
+
+
+2. queue implementation:
+#include<stdio.h>
+#define N 5
+int queue[N];
+int front=-1;
+int rear=-1;
+void enque(int n)
+{
+    if(rear==N-1)
+    printf("queue is full");
+    else if(front==-1 && rear==-1)
+    {
+    front=rear=0;
+    queue[rear]=n;
+    }
+    else
+    {
+        rear++;
+        queue[rear]=n;
+    }
+    
+}
+void deque()
+{
+    if(front==-1 && rear==-1)
+    printf("queue is empty");
+    else if(front==rear)
+       front=rear=-1; 
+    else
+    {
+        printf("%d",queue[front]);
+        front++;
+    }
+}
+void peek()
+{
+    if(rear==-1 && front==-1)
+    printf("queue is empty");
+    else
+    printf("\n next most element is:%d",queue[front]);
+}
+void display()
+{
+   if(rear==-1 && front==-1)
+    printf("queue is empty");
+    else
+    {
+        printf("\n remaining elements in queue:");
+        for(int i=front;i<rear+1;i++)
+            printf("\n%d",queue[i]);
+    }
+}
+int main()
+{
+   enque(1);
+   enque(2);
+   enque(3);
+   deque();
+   peek();
+   display();
+}
+output:
+1
+ next most element is:2
+ remaining elements in queue:
+2
+3
