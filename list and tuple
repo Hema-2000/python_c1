@@ -1,0 +1,14 @@
+1. replace element in tuple
+num_list = [(10, 20, 30), (1, 2), (5, 10, 15, 45)]
+n=int(input())
+res=[]
+for i in num_list:
+    a=list(i)
+    a.pop()
+    a.append(n)
+    res.append(tuple(a))
+print(res)
+output:
+0
+[(10, 20, 0), (1, 0), (5, 10, 15, 0)]
+
