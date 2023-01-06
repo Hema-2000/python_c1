@@ -12,3 +12,56 @@ output:
 0
 [(10, 20, 0), (1, 0), (5, 10, 15, 0)]
 
+
+2.convert tuple to string:
+tup=('1','2','3','4')
+s=''
+for i in tup:
+    s=s+i
+print(s)
+output:
+1234
+
+
+3.create a tuple
+tuple1=("hema",21,5.5)
+print(tuple1)
+output:
+('hema', 21, 5.5)
+
+
+4.Write a Python program to create a tuple with numbers and print one item.
+tuple1=(5,2,6,7,8)
+print(tuple1[2])
+output:
+6
+
+
+5.Write a Python program to check whether an element exists within a tuple
+tuple1=(5,2,6,7,8)
+present=10 in tuple1
+print(present)
+present=2 in tuple1
+print(present)
+not_present=2 not in tuple1
+print(not_present)
+not_present=10 not in tuple1
+print(not_present)
+
+
+output:
+False
+True
+False
+True
+
+
+6.convert list to tuple
+list1=[1,2,3,4,5]
+tuple1=tuple(list1)
+print(tuple1)
+output:
+(1, 2, 3, 4, 5)
+
+
+
