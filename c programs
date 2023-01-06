@@ -1,0 +1,76 @@
+1. faabnocci series
+#include<stdio.h>
+int fabnacci(int n)
+{
+    int n1=0,n2=1;
+    int n3=n1+n2;
+    printf("%d %d ",n1,n2);
+    for( int i=2;i<n;i++)
+    {
+        printf("%d ",n3);
+      
+        n1=n2;
+        n2=n3;
+          n3=n1+n2;
+        
+    }
+}
+int main()
+{
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    int (*fptr)(int);
+    fptr=fabnacci;
+    fptr(n);
+}
+output:
+enter the value of n:10
+0 1 1 2 3 5 8 13 21 34 
+
+
+2.power of 2
+#include<stdio.h>
+int power(int n)
+{
+    if((n&(n-1))==0)
+    printf("given number is power of 2");
+    else
+    printf("given number is not power of 2");
+}
+int main()
+{
+    int n;
+    printf("enter value of n:");
+    scanf("%d",&n);
+    int (*fptr)(int)=power;
+    fptr(n);
+}
+output:
+enter value of n:5
+given number is not power of 2
+
+
+3. repalce space with @
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    printf("enter the string:");
+    fgets(str,100,stdin);
+    char *ptr=(char*)malloc(strlen(str)*sizeof(char));
+    ptr=str;
+    for(int i=0;ptr[i]!='\0';i++)
+    {
+        if(ptr[i]==' ')
+        {
+            ptr[i]='@';
+        }
+    }
+    printf("%s",ptr);
+}
+out[ut:
+enter the string:hema is a good
+hema@is@a@good
