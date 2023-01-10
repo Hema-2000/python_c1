@@ -1,0 +1,99 @@
+1.#include<stdio.h>
+void pattern(int n)
+{
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+        printf("*");
+        }
+        printf("\n");
+    }
+}
+int main()
+{
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    void (*fptr)(int);
+    fptr=pattern;
+    fptr(n);
+}
+enter the value of n:5
+*
+**
+***
+****
+*****
+
+2.#include<stdio.h>
+void pattern(int n)
+{
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=i;j<=n;j++)
+        {
+        printf(" ");
+        }
+        for(j=0;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+int main()
+{
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    void (*fptr)(int);
+    fptr=pattern;
+    fptr(n);
+}
+enter the value of n:5
+      *
+     **
+    ***
+   ****
+  *****
+  
+  
+ 3.#include<stdio.h>
+void pattern(int n)
+{
+    int i,j;
+    for(i=0;i<n;i++)
+    {
+        for(j=i;j<=n;j++)
+        {
+        printf(" ");
+        }
+        for(j=0;j<i;j++)
+        {
+            printf("*");
+        }
+        for(j=0;j<=i;j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+int main()
+{
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    void (*fptr)(int);
+    fptr=pattern;
+    fptr(n);
+}
+enter the value of n:5
+      *
+     ***
+    *****
+   *******
+  *********
