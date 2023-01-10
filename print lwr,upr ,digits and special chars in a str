@@ -1,0 +1,49 @@
+#include<stdio.h>
+void string(char str[])
+{
+   int i=0,k=0,l=0,m=0,s=0;
+   char upp[100],lwr[100],spe[100],dig[100];
+   while(str[i]!='\0')
+   {
+       if(str[i]>='A' && str[i]<='Z' && str[i]!=' ')
+       {
+       upp[k++]=str[i];
+       }
+       else if(str[i]>='a' && str[i]<='z' && str[i]!=' ')
+       {
+       lwr[l++]=str[i];
+       }
+       else if(str[i]>=48 && str[i]<=57&& str[i]!=' ')
+       {
+           dig[s++]=str[i];
+       }
+       else
+       {
+       spe[m++]=str[i];
+       }
+       i++;
+   }
+   upp[k]='\0';
+   lwr[l]='\0';
+   spe[m]='\0';
+   dig[s]='\0';
+   printf("uppercase:%s\n",upp);
+   printf("lowercase:%s\n",lwr);
+   printf("special case:%s\n",spe);
+   printf("digits:%s",dig);
+}
+int main()
+{
+    char str[100];
+    printf("enter the string:");
+    fgets(str,100,stdin);
+    void (*fptr)(char[]);
+    fptr=string;
+    fptr(str);
+}
+output:
+enter the string:He#mA Is~ a GooD# GiRl
+uppercase:HAIGDGR
+lowercase:emsaooil
+special case:# ~  # 
+digits:
