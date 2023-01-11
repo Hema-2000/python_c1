@@ -1,0 +1,173 @@
+1. print n integer numbers from 1 to N
+a=int(input())
+counter=1
+
+while counter <=a :
+    print(counter)
+    counter= (counter+1)
+
+
+2.print numbers a to b
+a= int(input())
+b= int(input())
+for i in range(a,b+1):
+    print(i)
+
+
+3.solid square:
+n=int(input())
+for i in range(n):
+    print("* "*n)
+    
+    
+4.solid rectangle
+a=int(input())
+b=int(input())
+for i in range(a):
+    print("* "*b)
+    
+    
+5.solid right angle triangle
+a=int(input())
+counter=1
+while(counter<=a):
+    print("* "*counter)
+    counter=counter+1 
+    
+    
+    
+6.sum of n natural num
+a= int(input())
+res=0
+for i in range(a+1):
+    res+=i 
+print(res)
+
+
+7.sum of given inputs
+a=int(input())
+sum = 0
+counter=0
+for i in range(a):
+    b= int(input())
+    sum+=b
+
+print(sum)    
+
+
+8.print integers from n to 1
+a=int(input())
+c=a
+for i in range(a):
+    print(c,end=" ")
+    c-=1
+    
+7.multiples of given input numbers
+a=int(input())
+c=1
+for i in range(a):
+    n=int(input())
+    c=c*n
+print(c)
+
+
+8.double solid triangle
+a=int(input())
+for i in range(a):
+    for i in range(1,a+1):
+        
+        print("*"*i)
+
+9.factorial program
+a=int(input())
+res=1
+for i in range(1,a+1):
+    res=res*i
+print(res)
+    
+    
+    
+10.sum of n even numbers
+a=int(input())
+res=1
+for i in range(0,a+1):
+    if(i%2==0):
+        
+        res=res+i
+print(res)
+    
+    
+    
+    
+11.print sum of even numbers from n to m
+n=int(input())
+m=int(input())
+res=0
+for i in range(n,m+1):
+    if(i%2==0):
+        res=res+i
+print(res)
+ 
+ 
+12.sum of squares
+a= int(input())
+res=0
+for i in range(a+1):
+    res+= i**2
+print(res)
+
+
+13.sum of cubes
+n=int(input())
+res=0;
+for i in range(0,n+1):
+    res+=i**3
+print(res)
+
+
+13.sum and avg of first 10 given numbers
+res=0
+count=0 
+avg=0
+for i in range(10):
+    a=int(input())
+    res+=a 
+   
+print(res)
+print(res/10)
+    
+    
+    
+14.sum of digits in a number
+a=input()
+sum=0
+for i in a:
+    sum+=int(i)
+print(sum)    
+
+
+
+15.product of numbers with in range
+n=int(input())
+m=int(input())
+mul=1
+for i in range(n,m+1):
+    mul*=i
+print(mul)
+
+
+16.print table
+a=int(input())
+for i in range(1,11):
+    print(str(a)+'x'+str(i)+'='+str(a*i))
+    
+    
+    
+19.reverse a string
+a=input()
+r=''
+for i in a:
+    r=i+r
+print(r)
+    
+    
