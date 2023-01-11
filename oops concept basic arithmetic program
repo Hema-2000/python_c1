@@ -1,0 +1,13 @@
+class Functions:
+
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def add(self):
+        print("sum:",self.x+self.y)
+    def sub(self):
+        print("sub:",self.x-self.y)
+    def mul(self):
+        print("mul:",self.x*self.y)
+    def div(self):
+        print("div:",self.x/self.y)
