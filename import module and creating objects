@@ -1,0 +1,8 @@
+from arithmetic import Functions
+obj=Functions(8,4)
+obj.add()
+obj.sub()
+obj.div()
+obj.mul()
+
+
