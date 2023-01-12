@@ -1,0 +1,74 @@
+1.change the given data formate with changing some character
+a=input()
+print(a.replace('-','/'))
+output:
+07-11-2020
+07/11/2020
+
+
+2.convert lwr and upr case
+str=input()
+print(str.lower())
+print(str.upper())
+
+
+3.check given string is palindrome or not ignore case difference
+a= input().lower()
+res=''
+for i in a:
+    res=i+res
+if a==res:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+    
+    
+ 4.to check digits in a string
+ a= input()
+res=False
+for i in a:
+    if i.isdigit():
+        res=True
+if (res==True):
+    print('Valid Password')
+else:
+    print("Invalid Password")
+    
+2nd method to check with condition:
+a=input()
+b=0
+for i in a:
+    i.isupper()
+    b+=1
+if(b>0):
+    print("valid string")
+else:
+    print("not valid string")
+
+
+
+5. print lowercase char into upr case nd vice versa with in a string
+a=input()
+res=""
+for i in a:
+    if(i==i.lower()):
+        res+=i.upper()
+    else:
+        res+=i.lower()
+        
+print(res)
+
+
+6.  check palindrome or not string contains spaces
+a=input().lower()
+b=a.replace(' ','')
+res=b[::-1]
+if(b==res):
+    print("palindrome")
+else:
+    print("not palindrome")
+ output:
+ No lemon no melon
+palindrome
+
+ 
